@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser Tab & Mobile Toolbar Theme Color -->
+    <meta name="theme-color" content="#261d15">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sarvdrik</title>
+</head>
+<body>
+    <div id="background-image"></div>
+
+    <!-- Top Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="brand">
+                <span class="hindi-brand">सर्वदृक्™</span>
+                <span class="eng-brand">SARVDRIK</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">Our Promise</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Leaves center open so your background logo shines through) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="tagline">Purity you can see &amp; taste.</p>
+            <p class="sub-tagline">Farm-sourced staples, traditional spices &amp; artisanal foods.</p>
+            <a href="#products" class="cta-btn">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Products Section with Custom-Colored Tabs -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Artisanal Range</h2>
+
+            <!-- Category Filter Tabs -->
+            <div class="tab-bar" role="tablist">
+                <button class="tab-btn active" data-category="all">All Products</button>
+                <button class="tab-btn" data-category="oils">Cold-Pressed Oils</button>
+                <button class="tab-btn" data-category="pickles">Traditional Pickles</button>
+                <button class="tab-btn" data-category="snacks">Snacks &amp; Thekuas</button>
+                <button class="tab-btn" data-category="spices">Spice Powders</button>
+            </div>
+
+            <!-- Product Cards Grid -->
+            <div class="product-grid" id="productGrid">
+                <article class="card" data-category="oils">
+                    <span class="badge">Class 29</span>
+                    <h3>Wood-Pressed Mustard &amp; Groundnut Oils</h3>
+                    <p>Pure, unrefined oils extracted traditionally to retain natural aroma and nutrients.</p>
+                    <button class="order-btn" data-product="Cold-Pressed Oils">Enquire Now</button>
+                </article>
+
+                <article class="card" data-category="pickles">
+                    <span class="badge">Class 29</span>
+                    <h3>Homestyle Mango, Jackfruit &amp; Amla Pickles</h3>
+                    <p>Sun-cured raw mango, tender jackfruit, lemon, and gooseberry preserved in pure spices.</p>
+                    <button class="order-btn" data-product="Traditional Pickles">Enquire Now</button>
+                </article>
+
+                <article class="card" data-category="snacks">
+                    <span class="badge">Class 30</span>
+                    <h3>Artisanal Thekuas &amp; Baked Biscuits</h3>
+                    <p>Crisp, golden traditional sweets and wholesome biscuits crafted with authentic recipes.</p>
+                    <button class="order-btn" data-product="Thekuas & Biscuits">Enquire Now</button>
+                </article>
+
+                <article class="card" data-category="snacks">
+                    <span class="badge">Class 29 &amp; 30</span>
+                    <h3>Crispy Banana &amp; Potato Chips</h3>
+                    <p>Lightly seasoned, batch-fried farm chips with zero artificial preservatives.</p>
+                    <button class="order-btn" data-product="Banana & Potato Chips">Enquire Now</button>
+                </article>
+
+                <article class="card" data-category="spices">
+                    <span class="badge">Class 30</span>
+                    <h3>Stone-Ground Spice Powders</h3>
+                    <p>Vibrant turmeric, fiery red chilli, and aromatic coriander ground in small batches.</p>
+                    <button class="order-btn" data-product="Spice Powders">Enquire Now</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Brand Promise -->
+    <section id="about" class="section">
+        <div class="container glass-panel">
+            <h2 class="section-title">Why <span class="hindi-inline">सर्वदृक्</span>?</h2>
+            <p class="about-text">
+                Every jar, pouch, and bottle from <strong>Sarvdrik</strong> is rooted in transparency and traditional Indian culinary craft. From handpicked raw mangoes, amla, and green chillies to pure ground spices and crispy snacks, we deliver honest food made for modern kitchens.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <p><strong>सर्वदृक्™ (Sarvdrik)</strong> — Purity you can see &amp; taste.</p>
+        <p class="footer-note">Registered Trademark Classes 29 &amp; 30 | &copy; <span id="year"></span> Sarvdrik. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
