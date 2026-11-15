@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 4. WhatsApp / Order Inquiry Action
-  const whatsappNumber = '919999999999'; // Replace with your business WhatsApp number
+  const whatsappNumber = '917765895851'; // Replace with your business WhatsApp number
   document.querySelectorAll('.order-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const product = btn.getAttribute('data-product');
